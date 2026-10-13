@@ -1,4 +1,31 @@
-# Real-Time Multilingual Emotion, Sarcasm & Facial Emotion System
+# Cosine Attention Emotion Detection Chat
+
+## Live app
+
+**https://cosine-emotion-chat.vercel.app/**
+
+The repository now includes a public WhatsApp-style research demo under `web/`.
+
+The hosted demo:
+- accepts chat messages,
+- maps tokens into a small explicit emotion vector space,
+- compares the message vector with emotion prototypes using cosine similarity,
+- shows per-emotion scores,
+- visualizes token-level attention weight,
+- keeps the mechanism inspectable rather than hiding it behind a fake hosted model claim.
+
+The original local model service, facial-emotion code and training/evaluation files remain intact.
+
+This demo shows **model signals**, not a person's true inner emotional state.
+
+### Run locally
+
+```bash
+cd web
+python -m http.server 8000
+```
+
+---
 
 A distributed AI communication prototype that combines **multilingual text emotion detection, sarcasm detection, real-time chat, facial emotion recognition, and multi-client coordination**.
 
